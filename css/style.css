@@ -1,0 +1,226 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+/*nav*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    padding: 35px 0px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Make sure .menu has position context */
+}
+
+.menu li {
+    position: relative; /* Relative position for child pseudo-elements */
+    list-style-type: none; /* Remove bullet points from list items */
+}
+
+.menu li a {
+    margin: 0px 4px;
+    padding: 5px 10px;
+    color: #696969;
+    text-decoration: none; /* Remove underline from links */
+    position: relative; /* Position relative for the pseudo-element */
+}
+
+.menu li a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    bottom: -5px; /* Adjust to place bar below the text */
+    width: 100%; /* Make it full width of the link */
+    left: 0; /* Align with the left of the anchor */
+    border-radius: 2px;
+    background-color: #3647df;
+    transition: all ease 0.3s;
+    transform: scaleX(0); /* Start as hidden */
+}
+
+.menu li a:hover::after,
+.menu li a.active::after {
+    transform: scaleX(1); /* Scale to full width on hover or active */
+}
+
+.menu li a:hover {
+    color: #333333; /* Change color on hover */
+}
+
+
+.logo{
+    font-size:2rem;
+    color:#333333;
+    font-weight: 700;
+}
+
+.logo i{
+    color: #3647df;
+}
+.book-now-btn{
+    color: #202020;
+    background: linear-gradient(48deg, rgb(174, 181, 254) 0%, rgb(215, 214, 255) 93%);
+    font-weight: 600;
+    width: 150px;
+    height: 45px;
+    text-transform: uppercase;
+    display: inline-flex; /* Use inline-flex to allow proper sizing */
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+}
+
+.book-now-btn:hover{
+    transform: scale(1.05);
+}
+
+#main{
+    max-width: 1200px;
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(48deg, rgb(174, 181, 254) 0%, rgb(215, 214, 255) 93%);
+
+}
+
+.main-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: contain;
+}
+
+.main-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 500px;
+    width: 100%;
+}
+
+.main-text strong{
+    color: #333333;
+    font-size: 0.9rem;
+    background-color: aliceblue;
+    height: 40px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-text strong i{
+    margin-left: 5px;
+}
+
+.main-text h1{
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 4.3rem;
+    margin: 15px 0px;
+    color: #141316;
+}
+
+.main-text a{
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #1f1f1f;
+    border-radius: 10px;
+    font-weight: 600;
+    background: linear-gradient(48deg, rgb(174, 181, 254) 0%, rgb(215, 214, 255) 93%);
+}
+
+/* search */
+.search-tour {
+    border-radius: 100px;
+    background-color: #ffffff;
+    max-width: 1000px; /* Increased width to make it larger horizontally */
+    padding: 30px 50px; /* Added padding to increase size vertically and horizontally */
+    margin: 70px auto;
+    box-shadow: 8px 8px 30px rgba(29, 29, 29, 0.15);
+}
+
+
+.search-tour form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t-search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-b-icon{
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #242424;
+    background-color: #e9e5ff;
+    border-radius: 50%;
+}
+.t-search-box span{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #141316;
+    margin-bottom: 4px;
+}
+
+.s-b-input{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 60px);
+}
+
+.s-b-input input{
+    border: 1px solid rgba(29,29,29,0.3);
+    padding: 5px 10px;
+    background-color: #f9f8ff;
+    width: 100%;
+    outline: none;
+}
