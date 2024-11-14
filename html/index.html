@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- https://www.youtube.com/watch?v=ZDi3WohjmrI&t=1448s 40:25-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -102,7 +103,152 @@
               </div>
         </form>
     </div>
-
     </section>
+
+<!-- trending-->
+<section id="trending">
+    <div class="trending-heading">
+        <h2>Trending 2024</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <!-- box container-->
+    <div class="trending-box-container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- SLIDER1 START -->
+                    <!-- BOX 1 -->
+                    <div class="trending-box">
+                        <!-- img -->
+                        <div class="t-b-img">
+                            <img src="/images/t-1.jpg" alt="Trending 1">
+                        </div>
+                        <!-- text -->
+                        <div class="t-b-text">
+                            <a href="#">Forest Wild Life</a>
+                            <span>12 places | 3 Activities</span>
+                        </div>
+                        <!-- price -->
+                        <div class="price-book">
+                            <span class="t-price">200EURO</span>
+                            <a href="#" class="t-book">Book Now</a>
+                        </div>
+                        <!-- agency -->
+                        <div class="agency-name">
+                            <img src="/images/Agency_Name.png" alt="AgencyLogo">
+                            <span>Agency Name</span>
+                        </div>
+                    </div>
+
+                    <!-- BOX 2 -->
+                    <div class="trending-box">
+                        <!-- img -->
+                        <div class="t-b-img">
+                            <img src="/images/t-1.jpg" alt="Trending 1">
+                        </div>
+                        <!-- text -->
+                        <div class="t-b-text">
+                            <a href="#">Forest Wild Life</a>
+                            <span>12 places | 3 Activities</span>
+                        </div>
+                        <!-- price -->
+                        <div class="price-book">
+                            <span class="t-price">200EURO</span>
+                            <a href="#" class="t-book">Book Now</a>
+                        </div>
+                        <!-- agency -->
+                        <div class="agency-name">
+                            <img src="/images/Agency_Name.png" alt="AgencyLogo">
+                            <span>Agency Name</span>
+                        </div>
+                    </div>
+
+                    <!-- BOX 3 -->
+                    <div class="trending-box">
+                        <!-- img -->
+                        <div class="t-b-img">
+                            <img src="/images/t-1.jpg" alt="Trending 1">
+                        </div>
+                        <!-- text -->
+                        <div class="t-b-text">
+                            <a href="#">Forest Wild Life</a>
+                            <span>12 places | 3 Activities</span>
+                        </div>
+                        <!-- price -->
+                        <div class="price-book">
+                            <span class="t-price">200EURO</span>
+                            <a href="#" class="t-book">Book Now</a>
+                        </div>
+                        <!-- agency -->
+                        <div class="agency-name">
+                            <img src="/images/Agency_Name.png" alt="AgencyLogo">
+                            <span>Agency Name</span>
+                        </div>
+                    </div>
+
+                    
+                    <!-- SLIDER1 END -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Destioantion -->
+ <section id="destination">
+    <div class="destination-heading">
+        <h2>Top Destiantions</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+<!-- Grid -->
+    <div class="destination-grid">
+<!--Box-->
+        <div class="destination-box">
+            <img src="/images/d-1.jpg" alt="destination">
+<!--text-->
+            <div class="d-b-text-container">
+                <span class="ratio">3.5</span>
+            </div>
+        </div>
+    </div>
+ </section>
+   
+
+
+
+
+
+
+
+
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+
+      },
+    });
+  </script>
 </body>
 </html>
+
