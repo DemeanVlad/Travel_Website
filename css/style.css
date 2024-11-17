@@ -265,24 +265,26 @@ ul{
 }
 
 .trending-box-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Space evenly between boxes */
+    align-items: flex-start; /* Align boxes to the top */
     max-width: 1200px;
     width: 90%;
     margin-top: 40px;
-    flex-wrap: wrap; /* Allows boxes to wrap onto new lines if needed */
     gap: 20px; /* Adds space between boxes */
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
 }
 
 .trending-box {
-    flex: 1 1 250px; /* Allows flexible width but keeps minimum size */
+    flex: 0 0 calc(33.33% - 20px); /* Ensure boxes take up 1/3 width minus gap */
     padding: 15px;
     max-width: 400px;
+    min-width: 300px; /* Prevent boxes from becoming too small */
     border-radius: 10px;
     background-color: #ffffff;
-    border: 1px rgba(29, 29, 29, 0.1);
+    border: 1px solid rgba(29, 29, 29, 0.1);
 }
+
 
 .t-b-img {
     width: 100%;
